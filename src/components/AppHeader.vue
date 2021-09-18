@@ -1,5 +1,5 @@
 <template>
-  <div class="app__header">
+  <header class="app__header">
 		<div class="app__header__item">
 			<icon-logo></icon-logo>
 		</div>
@@ -11,7 +11,7 @@
 			<rounded-icon-button icon="earth"></rounded-icon-button>
 			<burger-button></burger-button>
 		</div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
