@@ -9,12 +9,13 @@
 		<div class="app__header__item">
 			<router-link to="/about">Сдайте жилье</router-link>
 			<rounded-icon-button icon="earth"></rounded-icon-button>
+			<burger-button></burger-button>
 		</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { IconButton, RoundedIconButton } from "@/components"
+import { IconButton, RoundedIconButton, BurgerButton } from "@/components"
 import { IconLogo } from "@/components/icons"
 
 </script>
@@ -25,6 +26,7 @@ import { IconLogo } from "@/components/icons"
 	height: 80px;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px !important;
 
   a {
     font-weight: bold;
