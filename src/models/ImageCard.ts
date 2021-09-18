@@ -1,4 +1,5 @@
 export interface IImageCard {
-	title: string;
-	imageUrl?: string;
+  title: string;
+  subtitle?: string;
+  imageUrl?: string;
 }
