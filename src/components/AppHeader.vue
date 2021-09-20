@@ -34,12 +34,19 @@ import { IconLogo } from "@/components/icons";
   box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px !important;
 
   a {
+    padding: 12px 8px;
+    border-radius: 22px;
+    font-size: 14px;
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
+    }
+
+    &:hover {
+      background-color: rgb(247, 247, 247);
     }
   }
 }
