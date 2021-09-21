@@ -36,8 +36,8 @@ const IconComponent = computed(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: v-bind(color);
   cursor: pointer;

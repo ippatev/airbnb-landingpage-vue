@@ -3,7 +3,13 @@
     <div class="row">
       <div class="col" v-for="col of cols" :key="col.title">
         <header v-text="col.title"></header>
-        <span v-for="link of col.links" :key="link" v-text="link"> </span>
+        <a v-for="link of col.links" :key="link" v-text="link" href="#"> </a>
+      </div>
+    </div>
+    <hr class="line" />
+    <div class="row">
+      <div class="col">
+        <a href="#"> © 2021 Airbnb, Inc </a>
       </div>
     </div>
   </footer>
@@ -65,6 +71,11 @@ const cols = [
 footer {
   border-top: 1px solid #dddddd;
   background-color: #f7f7f7;
+  color: #484848;
+}
+
+.line {
+  border-top: 1px solid #dddddd;
 }
 
 .row {
@@ -73,6 +84,10 @@ footer {
   justify-content: space-between;
   align-items: top;
   padding: 80px 80px 80px 0px;
+
+  & ~ .row {
+    padding-top: 0;
+  }
 }
 
 .col {
@@ -81,13 +96,20 @@ footer {
 }
 
 .col > header {
-  font-weight: bold;
+  color: inherit;
   font-size: 12px;
+  font-weight: 700;
 }
 
-.col > span {
+.col > a {
+  color: inherit;
   margin-top: 16px;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 </style>

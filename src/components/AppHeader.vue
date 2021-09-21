@@ -4,7 +4,7 @@
       <icon-logo></icon-logo>
     </div>
     <div class="app__header__item center">
-      <icon-button></icon-button>
+      <icon-text-button></icon-text-button>
     </div>
     <div class="app__header__item">
       <div class="app__header__links">
@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconButton, RoundedIconButton, BurgerButton } from "@/components";
+import { IconTextButton, RoundedIconButton, BurgerButton } from "@/components";
 import { IconLogo } from "@/components/icons";
 </script>
 
@@ -34,7 +34,7 @@ import { IconLogo } from "@/components/icons";
   box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px !important;
 
   a {
-    padding: 12px 8px;
+    padding: 12px 10px;
     border-radius: 22px;
     font-size: 14px;
     font-weight: bold;
