@@ -1,5 +1,7 @@
 # airbnb-landingpage-vue
 
+[preview](https://practical-nobel-81a61b.netlify.app/)
+
 ## Project setup
 ```
 yarn install
